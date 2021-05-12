@@ -1,0 +1,41 @@
+*{
+  font-family: 'Noto Sans JP'!important;
+}
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.example-header-image {
+    background-image: url(../../../assets/passport.jpg);
+    background-size: cover;
+  }
+
+  .main{
+      color: #303f9f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .heading{
+    font-weight: bolder;
+     font-size: 400%; 
+     margin-top: 3%;
+  }
+
+  .video{
+    margin-left: 2.5%;
+  }
+
+  .footer{
+    height: 10px;
+    width: 100%;
+    background-color: #303f9f;;
+  }
+  @media only screen and (max-width: 600px) {
+   .heading{
+       font-size: 200%;
+   }
+
+}

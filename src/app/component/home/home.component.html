@@ -1,0 +1,56 @@
+<div class="containers">
+    <mat-card style="padding: 3%; width: 80%;margin-top: 5%; margin-bottom: 2%;">
+        <div class="row">
+            <div class="col-md-3">
+                <mat-card style="cursor: pointer;" (click)="navigate()">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image">
+                        </div>
+                        <mat-card-title>Shaishav Kumar</mat-card-title>
+                        <mat-card-subtitle>Jr. Software Engineer</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 main">
+                <h1 class="heading">BUILDING FUTURE DIGITALLY</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 para">
+                <p style="padding: 2% 10%; text-align: center;">Over the last 5 years I’ve had the opportunity to work
+                    in different industries and for variety of clients.
+                    This helped me build my showcase of vivid creative works. I’ve been in love with colors,
+                    shapes and letters. Having worked in cultural functions and agency environments,
+                    I learned each and every aspect of design. I work freelance and would love to work with you.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 para">
+                <p style="padding: 0% 10%; text-align: center;">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                    he 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        <hr>
+        <div style="margin: 3%;" class="btn-group main" role="group">
+            <button (click)="loadAll()" type="button" class="btn btn-secondary">All</button>
+            <button (click)="loadHindi()" type="button" class="btn btn-secondary">Hindi</button>
+            <button (click)="loadEnglish()" type="button" class="btn btn-secondary">English</button>
+        </div>
+        <div class="row video">
+            <div class="col-md-6" *ngFor="let link of link">
+                <iframe width="560" height="315" [src]="link" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <br><br>
+        <div class="footer"></div>
+    </mat-card>
+</div>

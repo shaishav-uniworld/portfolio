@@ -1,0 +1,27 @@
+*{
+  font-family: 'Noto Sans JP'!important;
+}
+.example-full-width {
+    width: 100%;
+    margin: 0 2%;
+  }
+
+  .form{
+      padding-right: 4%;
+  }
+
+  .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .submitBtn{
+    color:  #303f9f;
+    transition: 0.3s;
+    float: right;
+  }
+  .submitBtn:hover{
+    color: white;
+    background-color: #303f9f;
+  }

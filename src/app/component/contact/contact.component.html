@@ -1,0 +1,39 @@
+<div class="container">
+            <mat-card style="margin-top: 15%;">
+                <mat-card-header>
+                    <mat-card-title style="color: #303f9f;">Contact Us</mat-card-title>
+                    <mat-card-subtitle>We will revert you back.</mat-card-subtitle>
+                </mat-card-header>
+                <div class="form">
+                    <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <mat-label>First Name</mat-label>
+                            <input type="text" formControlName="firstName" matInput placeholder="Enter Your First Name">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <mat-label>Last Name</mat-label>
+                            <input type="text" formControlName="lastName" matInput placeholder="Enter Your Last Name">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <mat-label>Email</mat-label>
+                            <input type="email" formControlName="email" matInput placeholder="Enter Your Valid Email">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <mat-label>Contact Number</mat-label>
+                            <input matInput formControlName="contactNumber" placeholder="Enter Your Valid Phone Number">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <mat-label>PIN Code</mat-label>
+                            <input matInput formControlName="pinCode" placeholder="Enter Your Area Pincode">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <mat-label>City</mat-label>
+                            <mat-select formControlName="city">
+                                <mat-option *ngFor="let city of cityList" [value]="city">{{city}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <button class="submitBtn" mat-raised-button>Submit</button>
+                    </form>
+                </div>
+            </mat-card>
+        </div>

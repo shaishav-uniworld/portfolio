@@ -1,0 +1,50 @@
+h1,h2,h3,p{
+  font-family: 'Noto Sans JP'!important;
+}
+
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('../../../assets/rate.png');
+    background-size: cover;
+  }
+
+  .repoBtn:hover{
+    color: #303f9f;
+  }
+
+  /* #optionTitle{
+      padding: auto;
+  } */
+
+  .card{
+      height: 50%;
+      width: 90%;
+  }
+
+  .image{
+    height: 70%;
+    width: 40%;
+    margin-bottom: 4%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .footer{
+    height: 10px;
+    width: 100%;
+    background-color: #303f9f;;
+  }
+
+  @media only screen and (max-width: 600px) {
+.image{
+  display: none;
+}
+  }

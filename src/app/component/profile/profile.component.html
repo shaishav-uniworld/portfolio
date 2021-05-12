@@ -1,0 +1,197 @@
+<div class="containers">
+    <mat-card style="padding: 3%; width: 80%;margin-top: 5%; margin-bottom: 2%;">
+        <div class="row">
+            <div class="col">
+                <img class="image" src="../../../assets/passport.jpg"
+                alt="Photo of a Shiba Inu">
+                <h1 style="font-weight: bolder; font-size: 200%;">SHAISHAV KUMAR</h1>
+            </div>
+            <div class="col"></div>
+            <div class="col">
+                <mat-card>
+                <div class="details">
+                    <h2>Address:</h2>
+                    <p>Power Grid Road, Chandra Nagar, Koshi College, Khagaria</p>
+                    <p>Bihar - 851205</p>
+                    <p>Email: shaishav.1si15ei034@gmail.com</p>
+                    <p>Phone: (+91) 8147585837</p>
+                </div>
+            </mat-card>
+            </div>
+        </div>
+        <hr>
+        <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 style="font-weight:  bold; color: #303f9f;">Objective</h2>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>To obtain a full time role in an esteemed technologies firm that will provide me with an
+                opportunity to utilize my technical knowledge and analytics skills, and contribute to the overall
+                company
+                goals of generating shareholder value.
+            </p>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 style="font-weight:  bold; color: #303f9f;">Experience</h2>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <h2>Jr Software Engineer</h2><span style="float: right;">
+                <h3>Nov 2020 - Present</h3>
+            </span>
+            <h3><i>Uniworld Logistics Pvt Ltd</i></h3>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 style="font-weight:  bold; color: #303f9f;">Education</h2>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <h2>Siddaganga Institute of Technology, Tumkur</h2><span style="float: right;">
+                <h3>Sep 2020</h3>
+            </span>
+            <ul>
+                <li>Electronics and Instrumentation</li>
+                <li>C.G.P.A &nbsp; 7.74</li>
+            </ul>
+            <hr>
+            <h2>R Lal Inter College, Khagaria</h2><span style="float: right;">
+                <h3>May 2015</h3>
+            </span>
+            <ul>
+                <li> 71.40%</li>
+            </ul>
+            <hr>
+            <h2>S.L. D.A.V Public School, Khagaria</h2><span style="float: right;">
+                <h3>May 2012</h3>
+            </span>
+            <ul>
+                <li> 70.30%</li>
+            </ul>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 style="font-weight:  bold; color: #303f9f;">Experience</h2>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <h2>Jr Software Engineer</h2><span style="float: right;">
+                <h3>Nov 2020 - Present</h3>
+            </span>
+            <h3><i>Uniworld Logistics Pvt Ltd</i></h3>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 style="font-weight:  bold; color: #303f9f;">Skills</h2>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-grid-list [cols]="4" rowHeight="10:6" [gutterSize]="'0%'">
+                <mat-grid-tile *ngFor="let option of skills">
+                    <mat-card class="card">
+                    <h2>{{option.title}}</h2>
+                </mat-card>
+            </mat-grid-tile>
+            </mat-grid-list>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 style="font-weight:  bold; color: #303f9f;">Projects</h2>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+                <div class="col-md-4">
+                    <mat-card>
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>Rate Management System</mat-card-title>
+                            <mat-card-subtitle>Uniworld Logistics Pvt Ltd</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../../assets/rates.jpg"
+                            alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <ul>
+                                <li>Login and Registration for new user.</li>
+                                <li>Dividing access on the basis of roles.</li>
+                                <li>Getting data from API and excel sheet.</li>
+                                <li>Price calculation on the basis of different parameters.</li>
+                            </ul>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button (click)="gitRepo()" class="repoBtn" mat-button>Github Repo<mat-icon>forward</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+                <div class="col-md-4">
+                    <mat-card>
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>Memo Web Application</mat-card-title>
+                            <mat-card-subtitle>Self</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../../assets/Memo-icon.png"
+                            alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <ul>
+                                <li>Registration for new user.</li>
+                                <li>Login to see notes</li>
+                                <li>Keeping notes secured with password.</li>
+                                <li>Profile based access.</li>
+                                <br>
+                            </ul>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button (click)="gitRepo()" class="repoBtn" mat-button>Github Repo<mat-icon>forward</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+                <div class="col-md-4">
+                    <mat-card>
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>Apna Kitchen</mat-card-title>
+                            <mat-card-subtitle>Food Delivery Web Application</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../../assets/delivery.png"
+                            alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <ul>
+                                <li>Login and Registration for new user.</li>
+                                <li>Listing food items.</li>
+                                <li>Receving and sending order to chef.</li>
+                                <li>Assigning order to drone for delivery.</li>
+                                <li>Tracking all order history.</li>
+                            </ul>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button (click)="gitRepo()" class="repoBtn" mat-button>Github Repo<mat-icon>forward</mat-icon></button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </mat-expansion-panel>
+        <hr>
+        <mat-expansion-panel [expanded]="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <h2 style="font-weight:  bold; color: #303f9f;">Workshops</h2>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul>
+                <li>Python Programming by <i>Cranes Software International Limited</i></li>
+                <li>Practical Application of Raspberry Pi using Python </li>
+                <li>Robotics Workshop, Ripple 1.0, ISA</li>
+            </ul>
+        </mat-expansion-panel>
+        <br><br>
+        <div class="footer"></div>
+    </mat-card>
+</div>
